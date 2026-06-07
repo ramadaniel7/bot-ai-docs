@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loonareen Studios - Legal Portal</title>
+    <!-- Tailwind CSS for sleek utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for premium visual icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #08070b;
+        }
+
+        .neon-glow-purple {
+            box-shadow: 0 0 40px rgba(139, 92, 246, 0.15);
+        }
+
+        .neon-border-teal:hover {
+            border-color: #00f5ff;
+            box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
+        }
+
+        /* Custom scrollbar for premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d0c12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d2a3a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b5cf6;
+        }
+    </style>
+</head>
+<body class="text-slate-300 min-h-screen flex flex-col justify-between selection:bg-teal-500 selection:text-black">
+
+    <!-- Glowing Background Decors -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-violet-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-teal-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-4xl w-full mx-auto px-4 py-12 relative z-10">
+        
+        <!-- HEADER -->
+        <header class="text-center mb-12">
+            <!-- Brand Logo Concept (Crescent Moon + Infinity) -->
+            <div class="inline-flex items-center justify-center p-4 bg-slate-900/50 rounded-2xl border border-slate-800/80 mb-6 neon-glow-purple">
+                <span class="text-4xl mr-1 text-teal-400">🌙</span>
+                <span class="text-3xl font-extrabold bg-gradient-to-r from-teal-400 via-violet-400 to-fuchsia-500 bg-clip-text text-transparent">∞</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-white mb-3">
+                Loonareen <span class="text-teal-400">Studios</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-md mx-auto">
+                Official Legal Agreements & Documentation for Loonareen AI Companions.
+            </p>
+        </header>
+
+        <!-- TAB NAVIGATION -->
+        <div class="flex justify-center gap-4 mb-10">
+            <button id="btn-terms" onclick="switchTab('terms')" class="px-6 py-3 rounded-full font-bold border border-slate-800 bg-slate-900/40 text-slate-400 hover:text-white transition-all duration-300 flex items-center gap-2">
+                <i data-lucide="file-text" class="w-5 h-5"></i>
+                Terms of Service
+            </button>
+            <button id="btn-privacy" onclick="switchTab('privacy')" class="px-6 py-3 rounded-full font-bold border border-slate-800 bg-slate-900/40 text-slate-400 hover:text-white transition-all duration-300 flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                Privacy Policy
+            </button>
+        </div>
+
+        <!-- DOCUMENT BOARD -->
+        <div class="bg-slate-900/40 backdrop-blur-md border border-slate-800/80 rounded-3xl p-6 md:p-10 shadow-2xl relative">
+            
+            <!-- TERMS OF SERVICE CONTENT -->
+            <article id="content-terms" class="hidden space-y-6 prose prose-invert max-w-none">
+                <div class="border-b border-slate-800 pb-4 mb-6">
+                    <span class="text-teal-400 font-semibold tracking-wider text-sm uppercase">Legal Agreement</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-1">Terms of Service</h2>
+                    <p class="text-slate-500 text-sm mt-1">Last Updated: June 7, 2026</p>
+                </div>
+
+                <p class="text-slate-300 leading-relaxed">
+                    Welcome to the digital realm of <strong>Loonareen Studios</strong>. By interacting with, inviting, or using any Loonareen AI Chatbot ("Service") within Discord, you agree to comply with and be bound by the following Terms of Service. If you do not agree, please do not use our Service.
+                </p>
+
+                <h3 class="text-xl font-bold text-teal-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-teal-950 text-teal-400 rounded-md">01</span> Acceptable Use
+                </h3>
+                <p class="text-slate-300">
+                    You are encouraged to explore, converse, and brainstorm with our AI. However, you agree not to use the Service to:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                    <li>Generate, spread, or promote hate speech, harassment, extreme violence, or sexually explicit content.</li>
+                    <li>Spam commands, flood API requests, or attempt to disrupt the bot's backend hosting on Pterodactyl/HeavenCloud.</li>
+                    <li>Attempt to reverse-engineer, exploit bugs, or jailbreak the AI's core instructions.</li>
+                </ul>
+
+                <h3 class="text-xl font-bold text-teal-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-teal-950 text-teal-400 rounded-md">02</span> The Loonareen Creative Philosophy
+                </h3>
+                <p class="text-slate-300">
+                    Our infinity symbol logo represents our core belief: <strong>every piece of art requires no boundaries</strong>. You have the absolute right to explore your thoughts and ideas freely. We create art from the heart and feelings, not merely for currency and expectation.
+                </p>
+                <!-- Highlight Box with the requested humor -->
+                <div class="bg-violet-950/30 border-l-4 border-violet-500 p-5 rounded-r-xl my-6 italic text-slate-300">
+                    "We design with passion, soul, and endless sleepless nights. However, in this economy, creative labor isn't free! Free-riding on our professional services is strictly prohibited—if anyone fails to pay for our dedicated commission works, a friendly metaphorical (or highly deserved) slap is waiting for you! Please pay your creators." :)
+                </div>
+
+                <h3 class="text-xl font-bold text-teal-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-teal-950 text-teal-400 rounded-md">03</span> Disclaimer of Warranties
+                </h3>
+                <p class="text-slate-300">
+                    The Service is provided on an "as-is" and "as-available" basis. Our AI is designed to be humorous, highly cultural (kalcer), and witty. As an AI model, it may occasionally generate incorrect, exaggerated, or hallucinatory responses. Loonareen Studios holds no liability for actions taken based on AI-generated suggestions.
+                </p>
+
+                <h3 class="text-xl font-bold text-teal-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-teal-950 text-teal-400 rounded-md">04</span> Intellectual Property
+                </h3>
+                <p class="text-slate-300">
+                    All graphics, custom-developed games, animations, music production assets, and branding materials related to "Loonareen Studios" (including our crescent moon and infinity assets) are the exclusive property of Loonareen Studios. You may not misrepresent our brand or resell our proprietary art without express written consent.
+                </p>
+
+                <h3 class="text-xl font-bold text-teal-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-teal-950 text-teal-400 rounded-md">05</span> Modifications & Termination
+                </h3>
+                <p class="text-slate-300">
+                    We reserve the right to suspend or block any Discord server or specific user from using the Bot at any time, without prior notice, if these terms are violated. These terms may be updated periodically to reflect changing economic climates or software guidelines.
+                </p>
+            </article>
+
+            <!-- PRIVACY POLICY CONTENT -->
+            <article id="content-privacy" class="hidden space-y-6 prose prose-invert max-w-none">
+                <div class="border-b border-slate-800 pb-4 mb-6">
+                    <span class="text-violet-400 font-semibold tracking-wider text-sm uppercase">Data Protection</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-white mt-1">Privacy Policy</h2>
+                    <p class="text-slate-500 text-sm mt-1">Last Updated: June 7, 2026</p>
+                </div>
+
+                <p class="text-slate-300 leading-relaxed">
+                    At <strong>Loonareen Studios</strong>, we are committed to respecting your digital privacy. This Privacy Policy outlines the minimal data our AI Bot processes and how we ensure your interactions remain secure, private, and fully transparent.
+                </p>
+
+                <h3 class="text-xl font-bold text-violet-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-violet-950 text-violet-400 rounded-md">01</span> Data We Collect
+                </h3>
+                <p class="text-slate-300">
+                    We believe in strict data minimization. The only data our Bot processes includes:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-slate-400">
+                    <li><strong>Discord User IDs & Usernames:</strong> To distinguish who is communicating with the AI.</li>
+                    <li><strong>Message Prompts:</strong> The text queries you send directly to the bot so the AI can understand and answer them.</li>
+                    <li><strong>Discord Channel & Guild IDs:</strong> To deliver responses to the correct channel within your server.</li>
+                </ul>
+
+                <h3 class="text-xl font-bold text-violet-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-violet-950 text-violet-400 rounded-md">02</span> How We Process Your Data
+                </h3>
+                <p class="text-slate-300">
+                    Your queries are processed in **real-time** using the Google Gemini API (the core engine behind our AI). 
+                </p>
+                <div class="bg-slate-950/80 border border-slate-800 p-5 rounded-xl text-sm font-mono text-slate-400 my-4">
+                    User Prompt -> Secure API Call -> Gemini AI Inference -> AI Response -> Discord Chat
+                </div>
+                <p class="text-slate-300">
+                    We do <strong>NOT</strong> sell, trade, or share your personal data, usernames, or chat logs with third-party advertising companies or brokers. 
+                </p>
+
+                <h3 class="text-xl font-bold text-violet-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-violet-950 text-violet-400 rounded-md">03</span> Data Retention
+                </h3>
+                <p class="text-slate-300">
+                    Our AI Bot is completely **stateless**. Once the response is generated and sent back to your Discord channel, your prompt and the AI's response are immediately cleared from our active server memory. We do not maintain long-term databases of your chat logs.
+                </p>
+
+                <h3 class="text-xl font-bold text-violet-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-violet-950 text-violet-400 rounded-md">04</span> Security Measures
+                </h3>
+                <p class="text-slate-300">
+                    All communications between Discord, our backend hosting at HeavenCloud, and the Google Gemini API are fully encrypted in transit. Access tokens and API keys are stored securely using strict environment configurations to prevent unauthorized access.
+                </p>
+
+                <h3 class="text-xl font-bold text-violet-400 flex items-center gap-2 mt-8">
+                    <span class="text-xs px-2 py-1 bg-violet-950 text-violet-400 rounded-md">05</span> Your Rights & Deletion
+                </h3>
+                <p class="text-slate-300">
+                    Since we do not store chat logs, your data is inherently ephemeral. If you wish to clear past interactions from Discord's UI, you can manually delete your messages directly in your Discord channel.
+                </p>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full border-t border-slate-900 bg-slate-950/60 py-6 text-center text-xs text-slate-500 relative z-10">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <p>&copy; 2026 Loonareen Studios. All rights reserved.</p>
+            <p class="flex items-center gap-1">
+                Hosted via <span class="text-slate-400">GitHub Pages</span> & Powered by <span class="text-teal-400 font-bold">Loonareen Team</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Core tab switching mechanism
+        function switchTab(tabId) {
+            const btnTerms = document.getElementById('btn-terms');
+            const btnPrivacy = document.getElementById('btn-privacy');
+            const contentTerms = document.getElementById('content-terms');
+            const contentPrivacy = document.getElementById('content-privacy');
+
+            if (tabId === 'privacy') {
+                // Style Active Button
+                btnPrivacy.className = "px-6 py-3 rounded-full font-bold border border-violet-500 bg-violet-950/20 text-violet-400 shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all duration-300 flex items-center gap-2";
+                btnTerms.className = "px-6 py-3 rounded-full font-bold border border-slate-800 bg-slate-900/40 text-slate-400 hover:text-white transition-all duration-300 flex items-center gap-2";
+                
+                // Show Content
+                contentPrivacy.classList.remove('hidden');
+                contentTerms.classList.add('hidden');
+                
+                // Update URL hash without reload
+                if(window.location.hash !== '#privacy') {
+                    history.pushState(null, null, '#privacy');
+                }
+            } else {
+                // Style Active Button
+                btnTerms.className = "px-6 py-3 rounded-full font-bold border border-teal-500 bg-teal-950/20 text-teal-400 shadow-[0_0_15px_rgba(20,184,166,0.3)] transition-all duration-300 flex items-center gap-2";
+                btnPrivacy.className = "px-6 py-3 rounded-full font-bold border border-slate-800 bg-slate-900/40 text-slate-400 hover:text-white transition-all duration-300 flex items-center gap-2";
+                
+                // Show Content
+                contentTerms.classList.remove('hidden');
+                contentPrivacy.classList.add('hidden');
+                
+                // Update URL hash without reload
+                if(window.location.hash !== '#terms') {
+                    history.pushState(null, null, '#terms');
+                }
+            }
+        }
+
+        // Auto routing based on URL hash (e.g. yoursite.com/#privacy)
+        function handleHashRoute() {
+            const currentHash = window.location.hash;
+            if (currentHash === '#privacy') {
+                switchTab('privacy');
+            } else {
+                switchTab('terms'); // Default is Terms of Service
+            }
+        }
+
+        // Listen for back/forward buttons and initial load
+        window.addEventListener('hashchange', handleHashRoute);
+        window.addEventListener('load', handleHashRoute);
+    </script>
+</body>
+</html>
